@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Calculadora W10</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:700|Open+Sans:400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="col-12 col-lg-8 col-md-8 col-xl-4 mx-auto my-5">
+		<div id="calculadora">
+			<div class="cnt-header">
+				<span class="header-title">Calculadora</span>
+			</div>
+			<div class="cnt-screen">
+				<div class="opciones-screen">
+					<div class="menu-opciones">
+						<div class="opciones">
+							<span class="icon-opciones"><i class="fas fa-bars"></i></span>
+							<span class="nombre-opciones ml-3 d-inline-block">Estándar</span>
+						</div>
+						<div class="historial"><span class="icon-opciones history"><i class="fas fa-history"></i></span></div>
+					</div>
+				</div>
+				<div class="cnt-result">
+					<p class="operacionesD">555 <span class="simbol_ope">&times;</span> 6688 <span class="simbol_ope">&plus;</span></p>
+					<p class="numD">88,555</p>
+				</div>
+			</div>
+			<div class="cnt-digits">
+				<div class="cnt-opeM">
+					<div class="row mx-0">
+						<div class="col btn_digits gris disabled">MC</div>
+						<div class="col btn_digits gris disabled">MR</div>
+						<div class="col btn_digits">M+</div>
+						<div class="col btn_digits">M-</div>
+						<div class="col btn_digits">MS</div>
+						<div class="col btn_digits gris disabled">M<sup>&dtrif;</sup></div>
+					</div>
+				</div>
+				<div class="digits" style="margin: 0 -4px -4px;">
+					<div class="row mx-0">
+						<div class="col btn_digits letter" data-operacion="porcentaje">%</div>
+						<div class="col btn_digits letter">&check;</div>
+						<div class="col btn_digits letter">&xscr;<sup style="font-weight: 400;margin-left: 2px;">2</sup></div>
+						<div class="col btn_digits letter"><sup style="font-weight: 400;">1</sup><span style="font-weight: 400;">/</span>&xscr;</div>
+					</div>
+					<div class="row mx-0">
+						<div class="col btn_digits letter">CE</div>
+						<div class="col btn_digits letter">C</div>
+						<div class="col btn_digits letter" data-operacion="retroceso"><i class="fas fa-backspace"></i></div>
+						<div class="col btn_digits letter operacion" data-operacion="division" style="font-size: 32px;">&divide;</div>
+					</div>
+					<div class="row mx-0">
+						<div class="col btn_digits dark" data-digit="7">7</div>
+						<div class="col btn_digits dark" data-digit="8">8</div>
+						<div class="col btn_digits dark" data-digit="9">9</div>
+						<div class="col btn_digits letter operacion" data-operacion="multiplicacion" style="font-size: 32px;">&times;</div>
+					</div>
+					<div class="row mx-0">
+						<div class="col btn_digits dark" data-digit="4">4</div>
+						<div class="col btn_digits dark" data-digit="5">5</div>
+						<div class="col btn_digits dark" data-digit="6">6</div>
+						<div class="col btn_digits letter operacion" data-operacion="resta" style="font-size: 32px;">&minus;</div>
+					</div>
+					<div class="row mx-0">
+						<div class="col btn_digits dark" data-digit="1">1</div>
+						<div class="col btn_digits dark" data-digit="2">2</div>
+						<div class="col btn_digits dark" data-digit="3">3</div>
+						<div class="col btn_digits letter operacion" data-operacion="suma" style="font-size: 32px;">&plus;</div>
+					</div>
+					<div class="row mx-0">
+						<div class="col btn_digits letter" style="font-size: 32px;">&plusmn;</div>
+						<div class="col btn_digits dark" data-digit="0">0</div>
+						<div class="col btn_digits" data-digit=".">.</div>
+						<div class="col btn_digits letter operacion" data-operacion="igual" style="font-size: 32px;">=</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copy">
+		<span class="created">Creado por AngelKrak</span>
+	</div>
+</body>
+</html>

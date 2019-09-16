@@ -1,0 +1,123 @@
+:root {
+	--OpenSans: 'Open Sans', sans-serif;
+	--NotoSans: 'Noto Sans', sans-serif;
+	--dark: rgba(17, 17, 17, 1);
+	--gris: #ccc;
+	--gris2: #a5a5a5;
+}
+
+body {
+	background: #eee url('../img/bg.jpg') no-repeat;
+	background-size: cover;
+}
+
+#calculadora {
+	width: 100%;
+	background-color: rgba(86, 86, 86, 0.78);
+	color: #fff;
+	font-family: var(--OpenSans);
+	font-size: 14.444px;
+	padding: 8px;
+	box-shadow: 0px 2px 13px 0px rgba(64, 62, 62, 0.5);
+}
+
+#calculadora .cnt-header .header-title {
+	display: block;
+	font-size: 13.413px;
+	padding-bottom: 12px;
+}
+
+#calculadora .cnt-screen .opciones-screen .menu-opciones {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#calculadora .cnt-screen .opciones-screen .menu-opciones .opciones .nombre-opciones {
+	font-size: 18.888px;
+	vertical-align: middle;
+}
+
+#calculadora .cnt-screen .opciones-screen .menu-opciones .historial .icon-opciones.history > .fa-history {
+	font-size: 16.555px;
+}
+
+#calculadora .cnt-screen .cnt-result {
+	font-size: 14.222px;
+	text-align: right;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#calculadora .cnt-screen .cnt-result .operacionesD {
+	color: var(--gris);
+	margin-bottom: 4px;
+}
+
+#calculadora .cnt-screen .cnt-result .numD {
+	font-family: var(--NotoSans);
+	font-size: 42.222px;
+	font-weight: bold;
+}
+
+#calculadora .cnt-digits .btn_digits {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	background-color: rgba(52, 52, 52, .6);
+	font-family: var(--NotoSans);
+	font-size: 23.666px;
+	font-weight: bold;
+	text-align: center;
+	max-height: 68px;
+	margin: 1px;
+	transition: background .3s linear;
+}
+
+#calculadora .cnt-digits .btn_digits:not(.disabled):hover {
+	background-color: rgba(117, 117, 117, 0.7) !important;
+}
+
+#calculadora .cnt-digits .btn_digits.operacion:hover {
+	color: #3e3e3e;
+	background-color: rgba(84, 168, 254, .7) !important;
+}
+
+#calculadora .cnt-digits .btn_digits.letter {
+	font-family: var(--OpenSans);
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#calculadora .cnt-digits .btn_digits.gris {
+	color: var(--gris2);
+}
+
+#calculadora .cnt-digits .btn_digits.dark {
+	background-color: var(--dark);
+}
+
+#calculadora .cnt-digits .cnt-opeM .btn_digits {
+	background-color: transparent !important;
+	font-family: var(--OpenSans);
+	font-size: 12.666px;
+	font-weight: 600;
+	padding: 6px;
+}
+
+#calculadora .cnt-digits .digits .btn_digits {
+	padding: 20px 16px;
+}
+
+.copy {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+}
+
+.copy .created {
+	font-size: 14.444px;
+	color: #eee;
+	background-color: #2980b9;
+	padding: 8px 16px;
+}
